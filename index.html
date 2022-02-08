@@ -1,0 +1,675 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="我们要活在自己的热爱里，而不是别人的眼光里">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/02/05/centos8%E5%88%87%E6%8D%A2%E6%BA%90/" target="_self">
+          centos8  EOL 切换源
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/02/05/centos8%E5%88%87%E6%8D%A2%E6%BA%90/" target="_self">
+          
+          centos8  EOL 切换源1. 背景​    前段时间发现我的服务器的yum无法下载，一直是404错误： ![image-20220204143921148](&#x2F;Users&#x2F;doudou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220204143921148.pn
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-02-05 16:22" pubdate>
+              2022-02-05
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">Linux</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/01/27/pm2%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89/" target="_self">
+          pm2的使用（一）
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/01/27/pm2%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89/" target="_self">
+          
+          pm2的使用（一） 写在前边  本文是针对pm2对NodeJS相关的应用   pm2是什么    PM2 是一个守护进程管理器，可帮助您管理和保持应用程序在线。 PM2 入门非常简单，它以简单直观的 CLI 形式提供，可通过 NPM 安装。   为什么要使用pm2 可以在后台轻松启动&#x2F;重新启动&#x2F;重新加载&#x2F;停止&#x2F;列出应用程序 保持应用程序在线 负载均衡，可以自
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-27 11:42" pubdate>
+              2022-01-27
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/pm2/">pm2</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/01/02/React%20%E4%BD%BF%E7%94%A8%20websocket%20%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE%E6%BA%90/" target="_self">
+          React 使用 websocket 获取数据
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/01/02/React%20%E4%BD%BF%E7%94%A8%20websocket%20%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE%E6%BA%90/" target="_self">
+          
+          React 使用 websocket 获取数据 适用于实时数据，避免轮巡查询资源持续占有  1. 安装依赖123npm install react-stomp&#x2F;&#x2F; 或者yarn add react-stopm  2. 引入资源1import SockJsClient from &amp;#x27;react-stomp&amp;#x27;  ![image-20220127141653893](&#x2F;Use
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-02 14:20" pubdate>
+              2022-01-02
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/React/">React</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/26/TypeScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%88%E6%8A%BD%E8%B1%A1%E7%B1%BB%E3%80%81%E6%8E%A5%E5%8F%A3%EF%BC%89/" target="_self">
+          TypeScript面向对象（二）
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/26/TypeScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%88%E6%8A%BD%E8%B1%A1%E7%B1%BB%E3%80%81%E6%8E%A5%E5%8F%A3%EF%BC%89/" target="_self">
+          
+          一、抽象类 通过关键字 abstract开头定义一个抽象类 抽象类和其它类区别不大，被专门用作继承的类，不能再被创作为实例的类 抽象类中的抽象方法，只能定义在抽象类中，子类必须对抽象方法进行重写  举例1234567891011121314151617181920212223abstract class Animal &amp;#123;  &#x2F;&#x2F;......  abstract sayHi(): void
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-26 13:50" pubdate>
+              2021-10-26
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/TypeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">TypeScript学习笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/25/TypeScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%88%E7%B1%BB%E3%80%81%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E3%80%81%E7%BB%A7%E6%89%BF%EF%BC%89/" target="_self">
+          TypeScript面向对象（一）
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/25/TypeScript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%88%E7%B1%BB%E3%80%81%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E3%80%81%E7%BB%A7%E6%89%BF%EF%BC%89/" target="_self">
+          
+          在我们所说的程序中，或者说编程中。所有的对象都被分成了两个部分数据和功能，以人为例,人的姓名、性别、年龄、身高、体重等属于数据，人可以说话、走路、吃饭、睡觉这些属于人的功能。 数据在对象中被成为属性，而功能就被称为方法。所以简而言之,在程序中一切皆是对象。  本文涉及：类、构造函数、继承  一、类（class） 要想面向对象，操作对象，首先便要拥有对象，那么下一个问题就是如何创建对象。 要想创建对
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-25 11:29" pubdate>
+              2021-10-25
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/TypeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">TypeScript学习笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/24/TypeScript%E4%B8%AD%E7%9A%84%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/" target="_self">
+          TypeScript中的基础类型
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/24/TypeScript%E4%B8%AD%E7%9A%84%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/" target="_self">
+          
+          TypeScript学习笔记（一） 一、 类型声明1.类型声明是ts中非常重要的特点；2.通过类型声明，可以指定ts中的变量（包括：实参、形参）的类型；3.指定类型后，当为变量赋值时，TS编译器会自动检测该值是否符合类型声明：符合则赋值，不符合则报错；4.语法结构： 12345let 变量: 类型let 变量: 类型 &#x3D; 值function fn(参数1: 类型, 参数2: 类型): 类型 &amp;#1
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-24 15:38" pubdate>
+              2021-10-24
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/TypeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">TypeScript学习笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/08/27/Royal%E4%BD%BF%E7%94%A8/" target="_self">
+          Mac端试试工具Royal使用方法
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/08/27/Royal%E4%BD%BF%E7%94%A8/" target="_self">
+          
+          这么说吧：在 macOS上最好用 ssh工具客户端是Royal TSX 宇宙无敌！哈哈哈哈哈哈（轻喷 当然，它除了ssh工具，内部还集成，例如像TeamView、远程桌面等非常非常多强大的功能，这里只讲ssh工具的使用。   本文主题直接调至第三步，我这个是MacOS系统哈，windows系统可以止步。  1.下载官网→Royal Apps可自行下载不同版本。 2.安装忽略 3.使用3.1 安装
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-08-27 17:36" pubdate>
+              2021-08-27
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/11/26/js%20%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%A8%E5%B1%8F/" target="_self">
+          js 判断浏览器全屏
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/11/26/js%20%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%A8%E5%B1%8F/" target="_self">
+          
+          前端使用js让浏览器进入全屏状态，退出全屏状态，以及判断是否为全屏状态 基本原理：使用 Element.requestFullscreen() 方法发出异步请求使元素进入全屏模式调用此API并不能保证元素一定能够进入全屏模式。如果元素被允许进入全屏幕模式，返回的Promise会resolve，并且该元素会收到一个fullscreenchange事件，通知它已经进入全屏模式。如果全屏请求被拒绝，返回
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-11-26 08:00" pubdate>
+              2020-11-26
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/JavaScript/">JavaScript</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/11/25/%E5%89%8D%E7%AB%AFjs%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%97%B6%E9%97%B4%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0%E6%95%88%E6%9E%9C/" target="_self">
+          js实现时间实时更新
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/11/25/%E5%89%8D%E7%AB%AFjs%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%97%B6%E9%97%B4%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0%E6%95%88%E6%9E%9C/" target="_self">
+          
+          前端js实现一个时间实时更新效果按秒刷新，实现效果如图： 简单原理就是：  封装一个时间格式的方法，加一个定时器，每秒去刷新一次，模拟成为时间更新效果   1. 封装公共方法1234567891011121314151617export function timeNow() &amp;#123;    let vWeek, vWeek_s, year, month, day, hours, minutes
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-11-25 14:52" pubdate>
+              2020-11-25
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/JavaScript/">JavaScript</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
