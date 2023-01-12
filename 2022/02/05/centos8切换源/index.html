@@ -11,11 +11,11 @@
   <link rel="icon" href="/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
+
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="Mr.Fang">
   <meta name="keywords" content="">
-  
+
     <meta name="description" content="centos8  EOL 切换源1. 背景​    前段时间发现我的服务器的yum无法下载，一直是404错误：  ​    经过苦苦查找才发现：  CentOS 8操作系统版本结束了生命周期（EOL），Linux社区已不再维护该操作系统版本。 2021年12月31日CentOS 8 EOL。按照社区规则，CentOS 8的源地址http:&#x2F;&#x2F;mirror.centos.org&#x2F;centos&#x2F;8">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Centos8 EOL 切换源">
@@ -30,9 +30,8 @@
 <meta property="article:tag" content="服务器">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://i0.hdslb.com/bfs/album/dd4407922660008eec4d17f864fade1fcfa8316f.png">
-  
-  
-  
+
+
   <title>Centos8 EOL 切换源 - 豆豆</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
@@ -61,9 +60,9 @@
 
 
   <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
+
     <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
+
 
 
 
@@ -80,18 +79,18 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-  
 
 
-  
+
+
 <meta name="generator" content="Hexo 6.0.0"></head>
 
 
 <body>
-  
+
 
   <header>
-    
+
 
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
@@ -109,88 +108,88 @@
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
+
+
+
+
+
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
             </li>
-          
-        
-          
-          
-          
-          
+
+
+
+
+
+
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
             </li>
-          
-        
-          
-          
-          
-          
+
+
+
+
+
+
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
             </li>
-          
-        
-          
-          
-          
-          
+
+
+
+
+
+
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
             </li>
-          
-        
-          
-          
-          
-          
+
+
+
+
+
+
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
             </li>
-          
-        
-        
+
+
+
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
               <i class="iconfont icon-search"></i>
             </a>
           </li>
-          
-        
-        
+
+
+
           <li class="nav-item" id="color-toggle-btn">
             <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
               <i class="iconfont icon-dark" id="color-toggle-icon"></i>
             </a>
           </li>
-        
+
       </ul>
     </div>
   </div>
 </nav>
 
-  
+
 
 <div id="banner" class="banner" parallax=true
      style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
@@ -198,55 +197,55 @@
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
-          
+
             <span id="subtitle" data-typed-text="Centos8 EOL 切换源"></span>
-          
+
         </div>
 
-        
-          
+
+
   <div class="mt-3">
-    
-    
+
+
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
         <time datetime="2022-02-05 16:22" pubdate>
           2022年2月5日 下午
         </time>
       </span>
-    
+
   </div>
 
   <div class="mt-1">
-    
+
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
-        
-          1.1k 字
-        
-      </span>
-    
 
-    
+          1.1k 字
+
+      </span>
+
+
+
       <span class="post-meta mr-2">
         <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          10 分钟
-        
-      </span>
-    
 
-    
-    
+
+
+          10 分钟
+
+      </span>
+
+
+
+
   </div>
 
 
-        
+
       </div>
 
-      
+
     </div>
   </div>
 </div>
@@ -256,13 +255,13 @@
   </header>
 
   <main>
-    
-      
+
+
 
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
     <div class="side-col d-none d-lg-block col-lg-2">
-      
+
 
     </div>
 
@@ -272,10 +271,10 @@
           <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">Centos8 EOL 切换源</h1>
-            
-            
+
+
               <div class="markdown-body">
-                
+
                 <meta name="referrer" content="no-referrer" />
 
 <h2 id="centos8-EOL-切换源"><a href="#centos8-EOL-切换源" class="headerlink" title="centos8  EOL 切换源"></a>centos8  EOL 切换源</h2><h3 id="1-背景"><a href="#1-背景" class="headerlink" title="1. 背景"></a>1. 背景</h3><p>​    前段时间发现我的服务器的yum无法下载，一直是404错误：</p>
@@ -296,26 +295,26 @@
 <h4 id="2-5-运行以下命令重新创建缓存"><a href="#2-5-运行以下命令重新创建缓存" class="headerlink" title="2.5 运行以下命令重新创建缓存"></a>2.5 运行以下命令重新创建缓存</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">yum clean all &amp;&amp; yum makecache<br></code></pre></td></tr></table></figure>
 
 
-                
+
               </div>
-            
+
             <hr/>
             <div>
               <div class="post-metas my-3">
-  
-  
+
+
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
-      
+
         <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">#服务器</a>
-      
+
     </div>
-  
+
 </div>
 
 
-              
-  
+
+
 
   <div class="license-box my-3">
     <div class="license-title">
@@ -323,76 +322,76 @@
       <div>http://example.com/2022/02/05/Centos8切换源/</div>
     </div>
     <div class="license-meta">
-      
+
         <div class="license-meta-item">
           <div>作者</div>
           <div>Mr.Fang</div>
         </div>
-      
-      
+
+
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
           <div>2022年2月5日</div>
         </div>
-      
-      
-      
+
+
+
         <div class="license-meta-item">
           <div>许可协议</div>
           <div>
-            
-              
-              
+
+
+
                 <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
                   <span class="hint--top hint--rounded" aria-label="BY - 署名">
                     <i class="iconfont icon-by"></i>
                   </span>
                 </a>
-              
-            
+
+
           </div>
         </div>
-      
+
     </div>
     <div class="license-icon iconfont"></div>
   </div>
 
 
 
-              
+
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
-                    
-                    
+
+
                       <a href="/2022/02/14/Hugo%20%E9%83%A8%E7%BD%B2%E5%88%B0%E8%87%AA%E5%B7%B1%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="Hugo部署到自己的云服务器">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Hugo部署到自己的云服务器</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
-                    
+
                   </article>
                   <article class="post-next col-6">
-                    
-                    
+
+
                       <a href="/2022/01/27/Pm2%E7%9A%84%E4%BD%BF%E7%94%A8/" title="Pm2 的使用">
                         <span class="hidden-mobile">Pm2 的使用</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
-                    
+
                   </article>
                 </div>
-              
+
             </div>
 
-            
+
           </article>
         </div>
       </div>
     </div>
 
     <div class="side-col d-none d-lg-block col-lg-2">
-      
+
   <aside class="sidebar" style="margin-left: -1rem">
     <div id="toc">
   <p class="toc-header">
@@ -415,23 +414,6 @@
 
 
 
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
 
 
 
@@ -439,15 +421,32 @@
 
 
 
-    
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
         <i class="iconfont icon-arrowup" aria-hidden="true"></i>
       </a>
-    
 
-    
+
+
       <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
@@ -469,27 +468,27 @@
   </div>
 </div>
 
-    
 
-    
+
+
   </main>
 
   <footer>
     <div class="footer-inner">
-  
+
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
     </div>
-  
-  
-  
-  
+
+
+
+
 </div>
 
   </footer>
 
   <!-- Scripts -->
-  
+
   <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
 
@@ -517,23 +516,23 @@
         return;
       }
       var text = subtitle.getAttribute('data-typed-text');
-      
+
         typing(text);
-      
+
     })(window, document);
   </script>
 
 
 
 
-  
+
     <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
 
-  
+
+
 <script>
   Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
     var toc = jQuery('#toc');
@@ -578,7 +577,7 @@
   <script>Fluid.plugins.codeWidget();</script>
 
 
-  
+
 <script>
   Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
     window.anchors.options = {
@@ -616,7 +615,7 @@
 </script>
 
 
-  
+
 <script>
   Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
     Fluid.plugins.fancyBox();
@@ -637,7 +636,7 @@
 <script  src="/js/boot.js" ></script>
 
 
-  
+
 
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
